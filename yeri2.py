@@ -23,7 +23,7 @@ import youtube_dl
 
 ## 예리봇의 시작
 bot = commands.Bot(command_prefix = "!") # 명령어 접두사 "!" 지정
-token = "ODM0NjUwODMwNjc3OTk5NjU3.YID_KQ._eSVGED470nwUdFj0g0LJ-lL1gA" # 내새끼 주민번호
+token = "^^" # 내새끼 주민번호
 
 
 ## 봇이 online되면 제일 먼저 수행되는 것들

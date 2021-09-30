@@ -68,49 +68,9 @@ async def 핑(ctx): # 핑 이라는 비동기 함수
 @bot.command()
 async def 건의(ctx, *, content: str):
     await ctx.send(content)
+    
 
-
-## 음성채널에 불러서 유튜브 url 가져다가 노래시키기
-# 필요 모듈(cmd에서 설치) : pynacl, selenium, beautifulsoup4, youtube_dl, requests 
-# 필요한 라이브러리 : ffmpeg 영상을 다운로드해서 소리를 재생시켜줌
-
-# 보이스 채널로 봇 불러오기
-# @bot.command()
-# async def 노래해(ctx):
-#     try: # 보이스 채널로 입장시키는 코드
-#         global vc
-#         vc = await ctx.message.author.voice.channel.connect()
-#     except: # 유저 접속하지 않았을때
-#         try:
-#             await vc.move_to(ctx.message.author.voice.channel) # 다른 채널에는 없는지 확인
-#         except:
-#             await ctx.send("채널에 유저가 접속해있지 않습니다.") # 다른 채널에도 없다면 메세지 출력
-
-# # 보이스 채널에서 봇 내보내기
-# @bot.command()
-# async def 빠잉(ctx):
-#     try:
-#         await vc.disconnect() # 봇을 내보내는 코드
-#     except:
-#         await ctx.send("이미 그 채널에 속해있지 않습니다.") # 봇이 이미 채널에 없을때 경고메세지 출력
-
-# ## 유튜브 url로 노래 재생
-# # https://youtu.be/qY_dgKyaHXU
-# @bot.command()
-# async def URL재생(ctx, *, url):
-#     YDL_OPTIONS = {'format': 'bestaudio','noplaylist':'True'}
-#     FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
-
-#     if not vc.is_playing():
-#         with YoutubeDL(YDL_OPTIONS) as ydl:
-#             info = ydl.extract_info(url, download=False)
-#         URL = info['formats'][0]['url']
-#         vc.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
-#         await ctx.send("무야호~")
-#     else:
-#         await ctx.send("노래가 이미 재생되고 있습니다!")      
-
-## 노래재생
+## 노래
 # 입장
 @bot.command()
 async def 공하(ctx):

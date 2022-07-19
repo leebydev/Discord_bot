@@ -31,12 +31,12 @@ token = "^^" # 내새끼 주민번호
 async def on_ready(): # on_ready 라는 함수를 생성하여, 봇이 실행되면 할 동작들을 넣어줌
     print("예리 일 할거야")
     print("=========================")
-    print("제작자 : 공예리")
+    print("제작자 : ***")
     print("leeby.dev@gmail.com")
-    print("https://www.twitch.tv/gongyeri")
+    print("")
     change_status.start() # 상태표시 로테이션제 ^ _____ ^
     # await bot.change_presence(activity=discord.Game("예리는 말 안드뤄!"))
-    # await bot.change_presence(activity=discord.Streaming(name="예리는", url="https://www.twitch.tv/gongyeri")) = 방송중 상태로 설정
+    # await bot.change_presence(activity=discord.Streaming(name="예리는", url="")) = 방송중 상태로 설정
 
 # await bot.change_presence(activity=discord.Game("텍스트 넣어")) = 상태 메세지 설정
 # await bot.change_presence(activity=discord.Game("텍스트 넣어"), status=discord.Status.상태) = 상태 설정
